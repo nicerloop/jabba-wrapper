@@ -16,8 +16,11 @@ Enjoy the wrapper :)
 
 #### macOS / Linux
 
+https://raw.githubusercontent.com/nicerloop/jabba-wrapper/main/jabbaw
+
+
 ```sh
-curl -sLO https://github.com/nicerloop/jabba-wrapper/raw/master/jabbaw && chmod +x jabbaw
+curl -sLO https://raw.githubusercontent.com/nicerloop/jabba-wrapper/main/jabbaw && chmod +x jabbaw
 echo "zulu@1.8" > .jabbarc
 ./jabbaw ./mvnw -v
 ```
@@ -26,7 +29,7 @@ echo "zulu@1.8" > .jabbarc
 
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-WebRequest -Uri https://github.com/nicerloop/jabba-wrapper/raw/master/jabbaw.ps1 -OutFile ./jabbaw.ps1
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/nicerloop/jabba-wrapper/main/jabbaw.ps1 -OutFile ./jabbaw.ps1
 "zulu@1.8" | Out-File c:\debug.txt
 ./jabbaw ./mvnw -v
 ```
