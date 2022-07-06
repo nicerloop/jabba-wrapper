@@ -21,7 +21,8 @@ https://raw.githubusercontent.com/nicerloop/jabba-wrapper/main/jabbaw
 
 ```sh
 curl -sLO https://raw.githubusercontent.com/nicerloop/jabba-wrapper/main/jabbaw && chmod +x jabbaw
-echo "zulu@1.8" > .jabbarc
+curl -sLO https://raw.githubusercontent.com/nicerloop/jabba-wrapper/main/jabbaw.ps1
+echo "zulu@1.11" > .jabbarc
 ./jabbaw ./mvnw -v
 ```
 
@@ -30,6 +31,7 @@ echo "zulu@1.8" > .jabbarc
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/nicerloop/jabba-wrapper/main/jabbaw.ps1 -OutFile ./jabbaw.ps1
-"zulu@1.8" | Out-File c:\debug.txt
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/nicerloop/jabba-wrapper/main/jabbaw -OutFile ./jabbaw
+"zulu@1.11" | Out-File c:\debug.txt
 ./jabbaw ./mvnw -v
 ```
