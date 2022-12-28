@@ -25,11 +25,11 @@ get() {
 
 if [ "$JABBA_VERSION" == "latest" ]; then
     # resolving "latest" to an actual tag
-    JABBA_VERSION=$(get https://shyiko.github.io/jabba/latest)
+    JABBA_VERSION=$(get https://Jabba-Team.github.io/jabba/latest)
 fi
 
 if [ ! -f "${JABBA_HOME}/bin/jabba" ] || [ "$JABBA_VERSION" != $(${JABBA_HOME}/bin/jabba --version) ]; then
-    get https://github.com/shyiko/jabba/raw/master/install.sh | bash -s -- --skip-rc
+    get https://github.com/Jabba-Team/jabba/raw/main/install.sh | bash -s -- --skip-rc
 fi
 
 ${JABBA_HOME}/bin/jabba install
