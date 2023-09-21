@@ -1,3 +1,6 @@
+Deprecated due to inclusion into main jabba repository (https://github.com/Jabba-Team/jabba/pull/23).
+See https://github.com/Jabba-Team/jabba/blob/main/jabbaw.md
+
 # jabba-wrapper
 
 Simple scripts to use jabba (https://github.com/Jabba-Team/jabba) without installation.
